@@ -1,0 +1,26 @@
+###  create author
+
+POST http://localhost:3031/api/v1/post/createAuthor
+Content-Type: application/json
+
+{
+   "name": "Vanlakhan"
+}
+
+
+####
+
+POST http://localhost:3031/api/v1/post/createPost
+Content-Type: application/json
+
+{
+   "imageUrl": "www.vanlakhan.com/pix.png",
+   "title":"Nigth party",
+   "body": "We will do night party at atcode office",
+    "authorId": "660e0496e743703abe07b526"
+}
+
+
+### get post
+
+GET http://localhost:3031/api/v1/post/get-post-all
